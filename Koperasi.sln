@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8165768A-3866-49E4-8744-8DA27C05C1A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A289A7BF-6E9F-40F0-BFF7-8C9E34ADBED2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koperasi.API", "src\Koperasi.API\Koperasi.API.csproj", "{1B7A01A9-34FF-48F9-BACF-AED344AC9989}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koperasi.Application", "src\Koperasi.Application\Koperasi.Application.csproj", "{3FF5A721-D6B2-4D64-B423-222E3A2847E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koperasi.Infrastructure", "src\Koperasi.Infrastructure\Koperasi.Infrastructure.csproj", "{34B12125-2A43-42BE-827C-C70767354008}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koperasi.Domain", "src\Koperasi.Domain\Koperasi.Domain.csproj", "{593FE4C8-747C-477C-9BEB-A4DD747018E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B7A01A9-34FF-48F9-BACF-AED344AC9989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7A01A9-34FF-48F9-BACF-AED344AC9989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7A01A9-34FF-48F9-BACF-AED344AC9989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7A01A9-34FF-48F9-BACF-AED344AC9989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF5A721-D6B2-4D64-B423-222E3A2847E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF5A721-D6B2-4D64-B423-222E3A2847E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF5A721-D6B2-4D64-B423-222E3A2847E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF5A721-D6B2-4D64-B423-222E3A2847E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B12125-2A43-42BE-827C-C70767354008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B12125-2A43-42BE-827C-C70767354008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B12125-2A43-42BE-827C-C70767354008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B12125-2A43-42BE-827C-C70767354008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593FE4C8-747C-477C-9BEB-A4DD747018E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593FE4C8-747C-477C-9BEB-A4DD747018E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593FE4C8-747C-477C-9BEB-A4DD747018E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593FE4C8-747C-477C-9BEB-A4DD747018E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B7A01A9-34FF-48F9-BACF-AED344AC9989} = {8165768A-3866-49E4-8744-8DA27C05C1A9}
+		{3FF5A721-D6B2-4D64-B423-222E3A2847E3} = {8165768A-3866-49E4-8744-8DA27C05C1A9}
+		{34B12125-2A43-42BE-827C-C70767354008} = {8165768A-3866-49E4-8744-8DA27C05C1A9}
+		{593FE4C8-747C-477C-9BEB-A4DD747018E4} = {8165768A-3866-49E4-8744-8DA27C05C1A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C806BA54-5B2C-435A-A729-A530F5F3F685}
+	EndGlobalSection
+EndGlobal
