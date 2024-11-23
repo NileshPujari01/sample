@@ -1,6 +1,5 @@
 ﻿using Koperasi.API.Commands;
 using Koperasi.API.Queries;
-using Koperasi.Infrastructure.Abstractions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,7 +28,7 @@ namespace Koperasi.API.Controllers
         /// </summary>
         /// <param name="request"></param>
         /// <returns>Returns RegisterUserResponse</returns>
-        [HttpPost("RegisterUser")]
+        [HttpPost("registerUser")]
         public async Task<IActionResult> RegisterUser([FromBody] RegisterUserCommand request)
         {
             var response = await _mediator.Send(request);
@@ -38,11 +37,11 @@ namespace Koperasi.API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Login user based on LoginUserRequest
         /// </summary>
         /// <param name="request"></param>
-        /// <returns></returns>
-        [HttpPost("Login")]
+        /// <returns>Returns LoginUserResponse</returns>
+        [HttpPost("login")]
         public async Task<IActionResult> LoginUser([FromBody] LoginUserQuery request)
         {
             var response = await _mediator.Send(request);
@@ -51,11 +50,11 @@ namespace Koperasi.API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Resend OTP functionality after OTP verification timeout
         /// </summary>
         /// <param name="request"></param>
-        /// <returns></returns>
-        [HttpPost("ResendOTP")]
+        /// <returns>Returns ResendOTPResponse</returns>
+        [HttpPost("resendOTP")]
         public async Task<IActionResult> ResendOTP([FromBody] ResendOTPQuery request)
         {
             var response = await _mediator.Send(request);

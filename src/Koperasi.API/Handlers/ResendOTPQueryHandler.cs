@@ -7,6 +7,9 @@ using MediatR;
 
 namespace Koperasi.API.Handlers
 {
+    /// <summary>
+    /// Handler to manage resend OTP functionality
+    /// </summary>
     public class ResendOTPQueryHandler : IRequestHandler<ResendOTPQuery, ResendOTPResponse>
     {
         private readonly IUserService _userService;

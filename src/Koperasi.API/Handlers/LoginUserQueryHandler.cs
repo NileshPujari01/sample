@@ -8,6 +8,9 @@ using MediatR;
 
 namespace Koperasi.API.Handlers
 {
+    /// <summary>
+    /// Handler to manage user login
+    /// </summary>
     public class LoginUserQueryHandler : IRequestHandler<LoginUserQuery, LoginUserResponse>
     {
         private readonly IUserService _userService;
@@ -34,6 +37,7 @@ namespace Koperasi.API.Handlers
                 Task<int> verifyMobile = Task.Run(async () => await _otpService.SendOTPOverMobile(dbResponse.CustomerMobileNo));
                 Task<int> verifyEmail = Task.Run(async () => await _otpService.SendOTPOverEmail(dbResponse.CustomerEmailId));
                 await Task.WhenAll(verifyMobile,verifyEmail);
+
                 var response = _mapper.Map<LoginUserResponse>(dbResponse);
                 response.MobileNoOTP = verifyMobile.Result;
                 response.EmailIdOTP = verifyEmail.Result;

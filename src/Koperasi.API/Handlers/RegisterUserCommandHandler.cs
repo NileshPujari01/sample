@@ -8,6 +8,9 @@ using Koperasi.Infrastructure.Abstractions;
 
 namespace Koperasi.API.Handlers
 {
+    /// <summary>
+    /// Handler to manage registration of user
+    /// </summary>
     public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, RegisterUserResponse>
     {
         private readonly IUserService _userService;

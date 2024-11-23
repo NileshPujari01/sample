@@ -4,6 +4,11 @@ using Koperasi.Infrastructure.Abstractions.Base;
 
 namespace Koperasi.Infrastructure.Repositories.Base
 {
+    /// <summary>
+    /// Generic implementation of operations in Repository pattern in combination with Linq
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
+    /// <typeparam name="TContext"></typeparam>
     public abstract class RepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>
         where TEntity : class
         where TContext : DbContext

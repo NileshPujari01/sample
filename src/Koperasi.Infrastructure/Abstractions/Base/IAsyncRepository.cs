@@ -2,6 +2,10 @@
 
 namespace Koperasi.Infrastructure.Abstractions.Base
 {
+    /// <summary>
+    /// Generic operations in Repository pattern in combination with Linq
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public interface IAsyncRepository<TEntity> where TEntity : class
     {
         Task<IReadOnlyList<TEntity>> GetAllAsync();

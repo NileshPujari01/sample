@@ -1,15 +1,12 @@
-﻿using MediatR;
-using Koperasi.API.Handlers;
+﻿using Koperasi.API.Handlers;
 using Koperasi.API.Mapping;
 using Koperasi.API.Queries;
 using Koperasi.Application.Extensions;
 using Koperasi.Application.Mapping;
 using Koperasi.Infrastructure.Extensions;
 using Koperasi.Infrastructure.Persistence;
+using MediatR;
 using System.Reflection;
-using Swashbuckle.AspNetCore.Swagger;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using Microsoft.AspNetCore.Builder;
 
 namespace Koperasi.API
 {

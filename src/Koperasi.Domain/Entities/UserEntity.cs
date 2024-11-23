@@ -2,6 +2,9 @@
 
 namespace Koperasi.Domain.Entities
 {
+    /// <summary>
+    /// Entity file representing DB fields
+    /// </summary>
     public class UserEntity
     {
         public int UserId { get; set; }
@@ -11,6 +14,7 @@ namespace Koperasi.Domain.Entities
         public string? CustomerEmailId { get; set; }
         public bool AgreePrivacyPolicy { get; set; }
         public int ApplicationPIN { get; set; }
+        public bool IsVerified { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public int UpdatedBy { get; set; }

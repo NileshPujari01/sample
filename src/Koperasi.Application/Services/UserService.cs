@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Koperasi.Application.Services
 {
+    /// <summary>
+    /// Service to manage all operations of user
+    /// </summary>
     public class UserService : IUserService
     {
         private readonly ILogger<UserService> _logger;
@@ -30,6 +33,11 @@ namespace Koperasi.Application.Services
             _dataContext = new DataContext(new DbContextOptions<DataContext>(), connectionStringProvider);
         }
 
+        /// <summary>
+        /// Method to manage user registration
+        /// </summary>
+        /// <param name="registerRequest"></param>
+        /// <returns>UserRegistrationResponse</returns>
         public async Task<UserRegistrationResponse> RegisterUser(UserRegistrationRequest registerRequest)
         {
             var request = _mapper.Map<UserEntity>(registerRequest);
@@ -38,6 +46,11 @@ namespace Koperasi.Application.Services
             return response;
         }
 
+        /// <summary>
+        /// Method to manage user login
+        /// </summary>
+        /// <param name="userLoginRequest"></param>
+        /// <returns>UserLoginResponse</returns>
         public async Task<UserLoginResponse> UserLogin(UserLoginRequest userLoginRequest)
         {
             var request = _mapper.Map<UserEntity>(userLoginRequest);

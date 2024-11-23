@@ -4,6 +4,9 @@ using Koperasi.Domain.Entities;
 
 namespace Koperasi.Domain.Configurations
 {
+    /// <summary>
+    /// Entity configuration file to map entity model with actual DB fields
+    /// </summary>
     public class UserEntityConfiguration : IEntityTypeConfiguration<UserEntity>
     {
         public void Configure(EntityTypeBuilder<UserEntity> builder)
@@ -16,6 +19,7 @@ namespace Koperasi.Domain.Configurations
             builder.Property(e => e.CustomerMobileNo).HasColumnName("customer_mobile_no");
             builder.Property(e => e.CustomerEmailId).HasColumnName("customer_email_id");
             builder.Property(e => e.AgreePrivacyPolicy).HasColumnName("is_privacy_policy_agreed");
+            builder.Property(e => e.IsVerified).HasColumnName("is_verified");
             builder.Property(e => e.ApplicationPIN).HasColumnName("app_pin");
             builder.Property(e => e.CreatedBy).HasColumnName("created_by");
             builder.Property(e => e.CreatedDate).HasColumnName("created_date");
